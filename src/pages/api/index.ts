@@ -12,4 +12,4 @@ export const localProxy = import.meta.env.LOCAL_PROXY;
 export const baseURL =
   process.env.NODE_ENV === 'development' && !disableProxy
     ? localProxy?.replace(/^https?:\/\//i, '')
-    : 'api.openai.com';
+    : 'openai-proxy-liart.vercel.app';
